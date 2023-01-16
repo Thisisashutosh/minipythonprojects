@@ -10,7 +10,7 @@ originalURL = tk.StringVar()
 def emailShortner():
     longURL = originalURL.get()
 
-    typebitly = pyshorteners.Shortener(api_key='907d50194fef619716d31f1b482917559b12953a')
+    typebitly = pyshorteners.Shortener(api_key='<Your own API key>')
     shortURL = typebitly.bitly.short(longURL)
 
     print("The Shortened URL is: " + shortURL)
