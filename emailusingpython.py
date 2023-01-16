@@ -19,10 +19,10 @@ def sendEmail():
         server.ehlo()
         server.starttls()
         server.ehlo()
-        server.login("ashutoshusingpython@gmail.com", 'qqwueudhurjnurtr')
+        server.login("<Your own email id", 'Your application key')
         print("Login successfull")
 
-        server.sendmail("ashutoshusingpython@gmail.com", email, msg)
+        server.sendmail("<Your own email id>", email, msg)
         print("Email sent successfully")
 
     except Exception as e:
